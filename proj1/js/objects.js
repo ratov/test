@@ -13,13 +13,8 @@ for(let opt in options) {
     console.log(opt);
 }
 
-console.log(Object.keys(options).length);
+let arr = ['first', 1, 2, 3, true, 4, 5];
 
-let arr = [1, 2, 3, 4, 5];
-
-arr.pop();
-arr.push("Ratov");
-arr.shift();
-arr.unshift("Kirill");
-
-console.log(arr);
+arr.forEach(function(item, index, array) {
+    console.log(index + ': ' + item + ' => ' + array );
+});
