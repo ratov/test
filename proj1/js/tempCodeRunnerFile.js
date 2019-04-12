@@ -1,16 +1,8 @@
-let options = {
-    witdh: 1024,
-    height: 1024,
-    name: "test",
-    bool: true,
-    colors: {
-        border: "tomato",
-        bg: "blue"
-    }
-};
+let arr = [1, 2, 3, 4, 5];
 
-for(let opt of options) {
-    console.log(opt);
-}
+arr.pop();
+arr.push("Ratov");
+arr.shift();
+arr.unshift("Kirill");
 
-console.log(Object.keys(options).length);
+console.log(arr);
