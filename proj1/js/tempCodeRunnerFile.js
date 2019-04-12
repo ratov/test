@@ -1,5 +1,8 @@
-let arr = ['first', 1, 2, 3, true, 4, 5];
+let arr = [12, 550, 3, 7],
+    i = arr.sort(compareNum);
 
-arr.forEach(function(item, index, array) {
-    console.log(index + ': ' + item + ' => ' + array[3] );
-});
+function compareNum(a, b) {
+    return a - b;
+}
+
+console.log(arr);

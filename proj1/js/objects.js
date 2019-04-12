@@ -1,20 +1,26 @@
-let options = {
-    witdh: 1024,
-    height: 1024,
-    name: "test",
-    bool: true,
-    colors: {
-        border: "tomato",
-        bg: "blue"
-    }
-};
+// let ans = prompt("", ""),
+//     arr = [];
 
-for(let opt in options) {
-    console.log(opt);
+// arr = ans.split(',');
+// console.log(arr);
+
+// let arr = ['adf', 'fasff', 'pp', 'zzz'],
+//     i = arr.join('=>');
+
+// console.log(i);
+
+
+// let arr = ['xwz', 'asaff', 'bb', 'ee'],
+//     i = arr.sort();
+
+// console.log(i);
+
+
+let arr = [12, 550, 3, 7],
+    i = arr.sort(compareNum);
+
+function compareNum(a, b) {
+    return a - b;
 }
 
-let arr = ['first', 1, 2, 3, true, 4, 5];
-
-arr.forEach(function(item, index, array) {
-    console.log(index + ': ' + item + ' => ' + array );
-});
+console.log(arr);
